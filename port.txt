@@ -1,0 +1,3 @@
+sudo port selfupdate
+
+sudo mv /usr/local/include/mach-o/arch.h /usr/local/include/mach-o/arch.h.RENAMED

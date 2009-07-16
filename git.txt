@@ -1,0 +1,38 @@
+$ cat create.sh
+#!/bin/sh -x
+#./init-git.sh
+PROJECT=$1.git
+URL=/home/repo/$PROJECT
+
+echo Creando $PROJECT
+
+mkdir $PROJECT
+cd $PROJECT
+
+git init
+touch .gitignore
+git add .gitignore
+git commit -m "just gitignore"
+git remote add origin $URL
+git config branch.master.remote origin
+git config branch.master.merge refs/heads/master
+git push --all
+git pull
+
+
+
+
+
+$ sh create.sh prj
+$ git clone /home/repo/prj.git
+$ cd prj
+$ echo "ok" > test
+$ git add *
+$ git commit -a
+$ git push origin master
+
+
+
+
+$ cd /home/repo/prj.git
+$ git config receive.denyCurrentBranch ignore

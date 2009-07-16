@@ -1,0 +1,7 @@
+mp3splt
+=======
+http://mp3splt.sourceforge.net/
+
+
+
+mp3splt -s -p th=-60.00 -d split audio.mp3

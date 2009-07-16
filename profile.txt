@@ -1,0 +1,6 @@
+$ cat .profile
+PS1='\w\$ '
+export TERM=xterm-color
+alias gitm="git push origin master"
+alias gita="git commit -a"
+alias ls="ls -vGF

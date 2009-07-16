@@ -1,0 +1,1 @@
+convert -quality 100 image.png image.jpg
