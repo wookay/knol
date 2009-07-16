@@ -1,4 +1,4 @@
-$ cat create.sh
+$ cat init-git.sh
 #!/bin/sh -x
 #./init-git.sh
 PROJECT=$1.git
@@ -23,7 +23,7 @@ git pull
 
 
 
-$ sh create.sh prj
+$ sh init-git.sh prj
 $ git clone /home/repo/prj.git
 $ cd prj
 $ echo "ok" > test
