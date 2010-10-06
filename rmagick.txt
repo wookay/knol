@@ -1,0 +1,2 @@
+sudo port install tiff -macosx imagemagick +q8 +gs +wmf
+sudo gem install rmagick

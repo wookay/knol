@@ -1,0 +1,29 @@
+               M-<
+               M-v
+               C-p
+C-a  M-b  C-b        C-f  M-f  C-e
+               C-n
+               C-v
+               M->
+
+
+C-u 3  : 반복
+C-g    : 명령 중지
+
+C-x 1  : 창 1개
+C-x u  : undo
+
+M-<Delback> <Delback>    C-d  M-d  C-k 
+       M-k .
+
+C-Space : mark set
+C-w     
+C-y     : yanking
+
+C-x C-f : Find a file
+C-x C-s : Save the file
+
+C-x C-b : List buffers
+C-x b foo : return to go back to the buffer "foo"
+C-x C-left C-right
+C-x s     : save some buffers
