@@ -1,2 +1,3 @@
 afconvert -f caff -d LEI16@12800 sound.mp3 sound.caf
 afconvert -f WAVE -d LEI16@12800 sound.mp3 sound.wav
+afconvert -f mp4f -d aac -b 128000 sound.wav sound.mp3

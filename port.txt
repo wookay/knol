@@ -1,3 +1,10 @@
 sudo port selfupdate
+sudo port upgrade outdated
 
 sudo mv /usr/local/include/mach-o/arch.h /usr/local/include/mach-o/arch.h.RENAMED
+
+
+sudo ln -s /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Headers /System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Headers
+
+
+sudo port install haskell-platform
