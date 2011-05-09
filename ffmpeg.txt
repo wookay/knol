@@ -1,1 +1,2 @@
 ffmpeg -i song.flv song.mp3
+ffmpeg -i song.flv -ar 22050 song.mp4
