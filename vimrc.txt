@@ -21,3 +21,9 @@ syntax on
 
 map <Space> <C-d>
 map \ <C-u>
+map .# :s/^\(\s*\)/\1# <CR>
+map .3 :s/^\(\s*\)# \1/<CR>
+map .- :s/^\(\s*\)/\1-- <CR>
+map ._ :s/^\(\s*\)-- \1/<CR>
+map ./ :s/^\(\s*\)/\1\/\/ <CR>
+map .? :s/^\(\s*\)\/\/ \1/<CR>

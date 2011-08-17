@@ -1,0 +1,3 @@
+~/github/factor$ ./build-support/factor.sh update
+
+$ ls .vim/syntax/factor.vim 

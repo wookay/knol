@@ -1,0 +1,1 @@
+mencoder -vf rotate=0 -oac pcm -ovc copy movie.mov -o rotated_movie.mp4 

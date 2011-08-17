@@ -1,0 +1,30 @@
+/System/Library/CoreServices/Dock.app/Contents/Resources/finder.png
+/System/Library/CoreServices/Finder.app/Contents/Resources/Finder.icns
+
+
+Change the contents of Dock.app by going to system/library/coreservices/dock
+
+control click on Dock and then choose show package contents. Copy the following files:
+
+finder.png
+trashempty.png
+trashfull.png
+
+Then replace them with new ones.
+
+Then do the following:
+
+1) type command and shift and g
+then type
+/private/var/folders/dS/
+Delete the file called com.apple.dock.iconcache
+
+2) Delete "com.apple.dock.db" in your home folder's preferences folder. 
+
+3) Restart into safe mode by holding down the shift key during restart.
+
+4) Empty trash after restart
+
+5) Restart the computer as you normally would
+
+

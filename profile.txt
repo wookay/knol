@@ -1,6 +1,45 @@
 $ cat .profile
-PS1='\w\$ '
 export TERM=xterm-color
-alias gitm="git push origin master"
-alias gita="git commit -a"
+export PROMPT_COMMAND='echo -ne "\033]0; ${PWD/#$HOME/~}\007"'
+export SVN_EDITOR=vi
+export LANG="ko_KR.UTF-8"
+
+alias gita='git commit -a'
+alias gitc='git clone '
+alias gitd='git diff --color'
+alias gitm='git push origin master'
+alias gitp='git pull '
+alias gitreset='git reset --hard HEAD'
 alias ls="ls -vGF
+
+
+c_cyan=`tput setaf 6`
+c_red=`tput setaf 1`
+c_green=`tput setaf 5`
+c_sgr0=`tput sgr0`
+parse_git_branch () {
+   if git rev-parse --git-dir >/dev/null 2>&1
+   then
+      gitver=$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
+   else
+      return 0
+   fi
+   echo -e "" $gitver
+}
+branch_color () {
+   if git rev-parse --git-dir >/dev/null 2>&1
+   then
+      color=""
+      if git diff --quiet 2>/dev/null >&2
+      then
+         color="${c_green}"
+      else
+         color=${c_red}
+      fi
+   else
+      return 0
+   fi
+   echo -ne $color
+}
+export PS1='\w\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]\$ '
+# export PS1='\w\$ '
